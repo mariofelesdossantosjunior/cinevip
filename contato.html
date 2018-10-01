@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- SEO - Search Engine Optimize -->
+    <meta name="author" content="Douglas Mariano dos Santos">
+    <meta name="description"
+          content="Projeto desenvolvido para a turma do Analise e Desenvolvimento de Sistemas do IFPR - Campus Umuarama">
+    <!-- //SEO - Search Engine Optimize -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="imagens/favicon.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cine Vip</title>
+</head>
+
+<body>
+<!-- barra de navegação -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <img src="./imagens/logo.png" alt=Logo" class="img-fluid" style="width: 40px; height: 100%">
+            <span class="font-weight-bold" style="font-size: 30px">Cine Vip</span>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-label="Menu de Navegação" aria-controls="navbarResponsive" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicos.html" class="nav-link">Anuncie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- //barra de navegação -->
+
+
+<!-- Conteúdo da Página -->
+<div class="container">
+    <h1 class="mt-4 mb-3">
+        Contato
+        <small>- Fale conosco</small>
+    </h1>
+
+    <!-- breadcrumb -->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+            Contato
+        </li>
+    </ol>
+    <!-- breadcrumb -->
+
+    <!-- Conteudo da página Sobre -->
+    <div class="row">
+        <div class="col-lg-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7023509608744!2d-53.3020778857388!3d-23.757991374766455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f2d155f3baf8b5%3A0x237b30c074f29552!2sCinevip!5e0!3m2!1spt-BR!2sbr!4v1538355800928"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4">
+            <address>
+                <h3><strong>Cine Vip</strong></h3>
+                <p>
+                    <abbr title="Endereço"><i class="fa fa-map-signs"></i></abbr>
+                    R. Cambé, 4134 - Zona II, Umuarama - PR, 87502-160 <br>
+                </p>
+                <p>
+                    <abbr title="Telefone"><i class="fa fa-phone"></i></abbr> (44) 3622-5111
+                </p>
+                <p>
+                    <abbr title="Email"><i class="fa fa-envelope-open"></i></abbr>
+                    <a href="mailto:#" class="text-muted">cinevip@cinevip.com.br</a>
+                </p>
+
+            </address>
+        </div>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <div class="row">
+        <div class="col-lg-12 mb-4">
+            <h3>Fale Conosco</h3>
+            <form name="enviarEmail" id="formularioContato" novalidate>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Nome:</label>
+                        <input type="text" class="form-control" id="nome" required
+                               data-validation-required-message="Digite seu nome.">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" required
+                               data-validation-required-message="Informe seu telefone.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Email:</label>
+                        <input type="email" class="form-control" id="email" required
+                               data-validation-required-message="Informe seu e-mail.">
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Mensagem:</label>
+                        <textarea rows="10" cols="100" class="form-control" id="mensagem" required
+                                  data-validation-required-message="Qual sua mensagem" maxlength="999"
+                                  style="resize:none"></textarea>
+                    </div>
+                </div>
+                <div id="success"></div>
+                <!-- para sucesso/falha -->
+                <button type="submit" class="btn btn-primary" id="enviarMensagem">Enviar Mensagem</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Formulário de Contato -->
+
+    <!-- Fim do conteudo -->
+</div>
+<!-- //Conteúdo da Página -->
+
+<!-- Rodapé -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">
+            Copyright &copy; - Cine Vip
+        </p>
+    </div>
+</footer>
+<!-- //Rodapé -->
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
